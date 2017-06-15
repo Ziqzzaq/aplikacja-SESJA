@@ -1,0 +1,21 @@
+RewriteEngine on
+
+<Files .htaccess>
+Deny from all
+</Files>
+
+<Files connect.php>
+Deny from all
+</Files>
+
+<Files groups.php>
+Deny from all
+</Files>
+
+RewriteRule ^index$ /index.php
+RewriteRule ^login$ /.private/login.php
+RewriteRule ^logout$ /.private/logout.php
+RewriteRule ^main$ /main.php
+
+ErrorDocument 404 /error/404.php
+ErrorDocument 403 /error/403.php
