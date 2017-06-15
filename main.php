@@ -40,6 +40,7 @@ if(!isset($_SESSION['logged-in']))
   				<ul>
 				    <li><a href="add-event">Dodaj wydarzenie</a></li>
 				    <li><a href="show-event">Wyswietl wydarzenia</a></li>
+						 <li><a href="logout">Wyloguj</a></li>
 				  </ul>
 			 	</nav>
 

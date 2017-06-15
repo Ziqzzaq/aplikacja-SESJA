@@ -15,6 +15,7 @@ Deny from all
 RewriteRule ^index$ /index.php
 RewriteRule ^login$ /.private/login.php
 RewriteRule ^logout$ /.private/logout.php
+RewriteRule ^add-user$ /add-user.php
 RewriteRule ^main$ /main.php
 
 ErrorDocument 404 /error/404.php

@@ -15,6 +15,7 @@ else
   while ($data = $result2->fetch_assoc()){
     $result=$conn->query(sprintf("SELECT * FROM ".$data['user']));
   while ($mail = $result->fetch_assoc()){
+  //  echo $data.['user'];
   if($date==$mail['day']){
     $adres = $data['email'];
     $tytul = $mail['name'];
